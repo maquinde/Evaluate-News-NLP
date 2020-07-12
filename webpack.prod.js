@@ -3,11 +3,10 @@ const webpack = require('webpack');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
+    mode: 'production',
     entry: './src/client/index.js',
 
     module: {
-        mode: 'production',
-        
         rules: [{
             test: '/\.js$/',
             exclude: /node_modules/,

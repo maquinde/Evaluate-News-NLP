@@ -4,3 +4,5 @@ import { handleSubmit } from './js/formHandler'
 console.log(checkForName);
 
 console.log("CHANGE!!");
+
+alert('Webpack updated!');
