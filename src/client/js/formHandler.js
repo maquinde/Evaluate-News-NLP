@@ -1,6 +1,7 @@
 function handleSubmit (event) {
     event.preventDefault()
     const baseUrl = 'http://localhost:8081/sentiment'
+    const url = getElementById('name').value; //added url definition
 
     if (Client.validUrl(url)) {
       fetch(baseUrl, {

@@ -43,7 +43,7 @@ app.post('/sentiment', function (req, res) {
         projectData.subjectivity = response.subjectivity
         projectData.text = response.text
         projectData.polarity_confidence = response.polarity_confidence
-        projectData.subjectivity_cofidence = response.subjectivity_cofidence
+        projectData.subjectivity_confidence = response.subjectivity_confidence //fixed typo
         res.send(projectData)
         console.log(projectData)
       } else {
