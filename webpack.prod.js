@@ -10,6 +10,7 @@ module.exports = {
     mode: 'production',
     entry: './src/client/index.js',
     output: {
+        path: path.resolve(__dirname, 'dist'),
         libraryTarget: 'var',
         library: 'Client'
     },
