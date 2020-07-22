@@ -6,10 +6,10 @@ const cors = require('cors')
 const dotenv = require('dotenv');
 dotenv.config();
 
-var textapi = new aylien({
+const textapi = new aylien({
     application_id: process.env.API_ID,
     application_key: process.env.API_KEY
-  });
+  }); // fixed var
 
 const app = express()
 app.use(cors())
